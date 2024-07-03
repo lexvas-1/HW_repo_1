@@ -11,7 +11,7 @@ public class SearchTests {
         Configuration.pageLoadStrategy = "eager";
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide-test.org"));
+        $("[id=search]").shouldHave(text("https://ru.selenide.org"));
     }
 }
 
